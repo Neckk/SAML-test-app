@@ -1,0 +1,20 @@
+//
+//  ViewController.swift
+//  SAML Test app
+//
+//  Created by Jacek Szyja on 28/04/2020.
+//  Copyright © 2020 Jacek Szyja. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
