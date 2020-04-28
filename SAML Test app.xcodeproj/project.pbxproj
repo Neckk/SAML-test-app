@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08055702245892B80050026C /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08055701245892B80050026C /* OAuth2.framework */; };
+		08055708245893300050026C /* CarthageOutput.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 080557072458932C0050026C /* CarthageOutput.xcfilelist */; };
+		080557112458A72C0050026C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080557102458A72C0050026C /* SessionManager.swift */; };
 		08C8398E24587670007C8076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8398D24587670007C8076 /* AppDelegate.swift */; };
-		08C8399024587670007C8076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8398F24587670007C8076 /* SceneDelegate.swift */; };
 		08C8399224587670007C8076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8399124587670007C8076 /* ViewController.swift */; };
 		08C8399524587670007C8076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C8399324587670007C8076 /* Main.storyboard */; };
 		08C8399724587673007C8076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C8399624587673007C8076 /* Assets.xcassets */; };
@@ -16,9 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08055701245892B80050026C /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2.framework; path = Carthage/Build/iOS/OAuth2.framework; sourceTree = "<group>"; };
+		080557062458931E0050026C /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
+		080557072458932C0050026C /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
+		0805570F2458A5C70050026C /* SAML Test app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SAML Test app.entitlements"; sourceTree = "<group>"; };
+		080557102458A72C0050026C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		08C8398A24587670007C8076 /* SAML Test app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAML Test app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C8398D24587670007C8076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08C8398F24587670007C8076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08C8399124587670007C8076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08C8399424587670007C8076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08C8399624587673007C8076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08055702245892B80050026C /* OAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08055700245892B80050026C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08055701245892B80050026C /* OAuth2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		08C8398124587670007C8076 = {
 			isa = PBXGroup;
 			children = (
 				08C8398C24587670007C8076 /* SAML Test app */,
+				080557062458931E0050026C /* CarthageInput.xcfilelist */,
+				080557072458932C0050026C /* CarthageOutput.xcfilelist */,
 				08C8398B24587670007C8076 /* Products */,
+				08055700245892B80050026C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +74,10 @@
 		08C8398C24587670007C8076 /* SAML Test app */ = {
 			isa = PBXGroup;
 			children = (
+				0805570F2458A5C70050026C /* SAML Test app.entitlements */,
 				08C8398D24587670007C8076 /* AppDelegate.swift */,
-				08C8398F24587670007C8076 /* SceneDelegate.swift */,
 				08C8399124587670007C8076 /* ViewController.swift */,
+				080557102458A72C0050026C /* SessionManager.swift */,
 				08C8399324587670007C8076 /* Main.storyboard */,
 				08C8399624587673007C8076 /* Assets.xcassets */,
 				08C8399824587673007C8076 /* LaunchScreen.storyboard */,
@@ -77,6 +96,7 @@
 				08C8398624587670007C8076 /* Sources */,
 				08C8398724587670007C8076 /* Frameworks */,
 				08C8398824587670007C8076 /* Resources */,
+				08055705245892DE0050026C /* Carthage copy */,
 			);
 			buildRules = (
 			);
@@ -127,11 +147,35 @@
 			files = (
 				08C8399A24587673007C8076 /* LaunchScreen.storyboard in Resources */,
 				08C8399724587673007C8076 /* Assets.xcassets in Resources */,
+				08055708245893300050026C /* CarthageOutput.xcfilelist in Resources */,
 				08C8399524587670007C8076 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08055705245892DE0050026C /* Carthage copy */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/CarthageInput.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Carthage copy";
+			outputFileListPaths = (
+				"$(SRCROOT)/CarthageOutput.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08C8398624587670007C8076 /* Sources */ = {
@@ -140,7 +184,7 @@
 			files = (
 				08C8399224587670007C8076 /* ViewController.swift in Sources */,
 				08C8398E24587670007C8076 /* AppDelegate.swift in Sources */,
-				08C8399024587670007C8076 /* SceneDelegate.swift in Sources */,
+				080557112458A72C0050026C /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +328,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SAML Test app/SAML Test app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95MG2VV3YK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "SAML Test app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +352,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SAML Test app/SAML Test app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95MG2VV3YK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "SAML Test app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
