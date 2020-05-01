@@ -16,7 +16,7 @@ class AppConfig {
     static func sessionConfiguration(for loginURL: URL) -> OAuth2 {
         let loginURLString = loginURL.absoluteString
 
-        return OAuth2SimplyEGrant(settings: [
+        let oauth2 = OAuth2SimplyEGrant(settings: [
             "authorize_uri": loginURLString, // login url, will be provided from auth doc
             "redirect_uris": ["https://skyneck.pl/login"],   // url to call after successfull log in, in this case we use universal link registered to this application
             "keychain_account_for_tokens": loginURLString, // save token under URL key, so that user can log in and store multiple universities sessions
@@ -25,5 +25,14 @@ class AppConfig {
 //            "client_secret": "some secret", // we may use it in future
 //            "scope": "", // we may use it in future
             ] as OAuth2JSON)
+
+        #if targetEnvironment(simulator)
+            // for custom webview, no need to support universal links
+            // I use it for simulator, as universal links doesn't work there
+            // safari view is more modern solution though
+            oauth2.authConfig.ui.useSafariView = false
+        #endif
+
+        return oauth2
     }
 }
