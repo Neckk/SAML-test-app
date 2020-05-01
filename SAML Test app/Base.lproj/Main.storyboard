@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,85 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SAML_Test_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="fPd-mh-xAE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeC-FZ-YZQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gL6-vU-Igb">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pZN-BU-YAN">
+                                                        <rect key="frame" x="16" y="16" width="382" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBr-bc-zqS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
+                                                                <state key="normal" title="Load /me"/>
+                                                                <connections>
+                                                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3p-No-q0L"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svc-Zh-Gss">
+                                                                <rect key="frame" x="199" y="0.0" width="183" height="30"/>
+                                                                <state key="normal" title="Log out"/>
+                                                                <connections>
+                                                                    <action selector="logOutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWO-E9-3cB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click &quot;Load&quot; button above" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-CA-Ucu">
+                                                        <rect key="frame" x="16" y="62" width="382" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="gL6-vU-Igb" secondAttribute="bottom" id="CNz-tv-0HV"/>
+                                            <constraint firstAttribute="trailing" secondItem="gL6-vU-Igb" secondAttribute="trailing" id="Gj7-gs-tDz"/>
+                                            <constraint firstItem="gL6-vU-Igb" firstAttribute="top" secondItem="SeC-FZ-YZQ" secondAttribute="top" id="Jtj-s3-PNz"/>
+                                            <constraint firstItem="gL6-vU-Igb" firstAttribute="leading" secondItem="SeC-FZ-YZQ" secondAttribute="leading" id="OgE-f5-c97"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SeC-FZ-YZQ" firstAttribute="width" secondItem="fPd-mh-xAE" secondAttribute="width" id="64m-zQ-8Nn"/>
+                                    <constraint firstItem="SeC-FZ-YZQ" firstAttribute="leading" secondItem="fPd-mh-xAE" secondAttribute="leading" id="7LD-wL-RSP"/>
+                                    <constraint firstItem="SeC-FZ-YZQ" firstAttribute="bottom" secondItem="fPd-mh-xAE" secondAttribute="bottom" id="Dz4-HB-k7y"/>
+                                    <constraint firstItem="SeC-FZ-YZQ" firstAttribute="top" secondItem="fPd-mh-xAE" secondAttribute="top" id="E9a-Jy-gwi"/>
+                                    <constraint firstItem="SeC-FZ-YZQ" firstAttribute="trailing" secondItem="fPd-mh-xAE" secondAttribute="trailing" id="jZA-J5-sTi"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fPd-mh-xAE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Yr-La-gdW"/>
+                            <constraint firstItem="fPd-mh-xAE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FI5-PB-vDf"/>
+                            <constraint firstAttribute="trailing" secondItem="fPd-mh-xAE" secondAttribute="trailing" id="ZMS-JJ-Izo"/>
+                            <constraint firstAttribute="bottom" secondItem="fPd-mh-xAE" secondAttribute="bottom" id="hxs-YF-8Y7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loadButton" destination="uBr-bc-zqS" id="500-2U-7Xg"/>
+                        <outlet property="logOutButton" destination="svc-Zh-Gss" id="0Re-fl-6Hd"/>
+                        <outlet property="textLabel" destination="tNu-CA-Ucu" id="2u1-Kw-ndW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
 </document>

@@ -10,6 +10,9 @@
 		08055702245892B80050026C /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08055701245892B80050026C /* OAuth2.framework */; };
 		08055708245893300050026C /* CarthageOutput.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 080557072458932C0050026C /* CarthageOutput.xcfilelist */; };
 		080557112458A72C0050026C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080557102458A72C0050026C /* SessionManager.swift */; };
+		0839F0C9245B8CB200D755B2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0C8245B8CB200D755B2 /* AppConfig.swift */; };
+		0839F0CB245B8DF300D755B2 /* SimplyEGrantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0CA245B8DF300D755B2 /* SimplyEGrantType.swift */; };
+		0839F0CD245B911D00D755B2 /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0CC245B911D00D755B2 /* Data+JSON.swift */; };
 		08C8398E24587670007C8076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8398D24587670007C8076 /* AppDelegate.swift */; };
 		08C8399224587670007C8076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8399124587670007C8076 /* ViewController.swift */; };
 		08C8399524587670007C8076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C8399324587670007C8076 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		080557072458932C0050026C /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
 		0805570F2458A5C70050026C /* SAML Test app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SAML Test app.entitlements"; sourceTree = "<group>"; };
 		080557102458A72C0050026C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		0839F0C8245B8CB200D755B2 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		0839F0CA245B8DF300D755B2 /* SimplyEGrantType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyEGrantType.swift; sourceTree = "<group>"; };
+		0839F0CC245B911D00D755B2 /* Data+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
 		08C8398A24587670007C8076 /* SAML Test app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAML Test app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C8398D24587670007C8076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C8399124587670007C8076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +82,12 @@
 			children = (
 				0805570F2458A5C70050026C /* SAML Test app.entitlements */,
 				08C8398D24587670007C8076 /* AppDelegate.swift */,
+				0839F0C8245B8CB200D755B2 /* AppConfig.swift */,
+				0839F0CA245B8DF300D755B2 /* SimplyEGrantType.swift */,
 				08C8399124587670007C8076 /* ViewController.swift */,
 				080557102458A72C0050026C /* SessionManager.swift */,
 				08C8399324587670007C8076 /* Main.storyboard */,
+				0839F0CC245B911D00D755B2 /* Data+JSON.swift */,
 				08C8399624587673007C8076 /* Assets.xcassets */,
 				08C8399824587673007C8076 /* LaunchScreen.storyboard */,
 				08C8399B24587673007C8076 /* Info.plist */,
@@ -183,8 +192,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C8399224587670007C8076 /* ViewController.swift in Sources */,
+				0839F0CD245B911D00D755B2 /* Data+JSON.swift in Sources */,
+				0839F0C9245B8CB200D755B2 /* AppConfig.swift in Sources */,
 				08C8398E24587670007C8076 /* AppDelegate.swift in Sources */,
 				080557112458A72C0050026C /* SessionManager.swift in Sources */,
+				0839F0CB245B8DF300D755B2 /* SimplyEGrantType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
