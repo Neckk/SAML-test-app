@@ -13,6 +13,16 @@
 		0839F0C9245B8CB200D755B2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0C8245B8CB200D755B2 /* AppConfig.swift */; };
 		0839F0CB245B8DF300D755B2 /* SimplyEGrantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0CA245B8DF300D755B2 /* SimplyEGrantType.swift */; };
 		0839F0CD245B911D00D755B2 /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0CC245B911D00D755B2 /* Data+JSON.swift */; };
+		0839F0D4245C39D600D755B2 /* OPDS2AuthenticationDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0D3245C39D600D755B2 /* OPDS2AuthenticationDocument.swift */; };
+		0839F0D6245C3ACA00D755B2 /* authentication_document_original.json in Resources */ = {isa = PBXBuildFile; fileRef = 0839F0D5245C3ACA00D755B2 /* authentication_document_original.json */; };
+		0839F0D8245C4B0000D755B2 /* authentication_document.json in Resources */ = {isa = PBXBuildFile; fileRef = 0839F0D7245C4B0000D755B2 /* authentication_document.json */; };
+		0839F0DB245C4BD000D755B2 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0DA245C4BD000D755B2 /* Account.swift */; };
+		0839F0DD245C4D8800D755B2 /* OPDS2Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0DC245C4D8800D755B2 /* OPDS2Publication.swift */; };
+		0839F0DF245C4D9300D755B2 /* OPDS2Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0DE245C4D9300D755B2 /* OPDS2Link.swift */; };
+		0839F0E1245C4DFA00D755B2 /* libraries_original.json in Resources */ = {isa = PBXBuildFile; fileRef = 0839F0E0245C4DFA00D755B2 /* libraries_original.json */; };
+		0839F0E3245C4E0A00D755B2 /* libraries.json in Resources */ = {isa = PBXBuildFile; fileRef = 0839F0E2245C4E0A00D755B2 /* libraries.json */; };
+		0839F0E5245C606100D755B2 /* APIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0E4245C606100D755B2 /* APIMock.swift */; };
+		0839F0E7245C64B700D755B2 /* OPDS2CatalogsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839F0E6245C64B700D755B2 /* OPDS2CatalogsFeed.swift */; };
 		08C8398E24587670007C8076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8398D24587670007C8076 /* AppDelegate.swift */; };
 		08C8399224587670007C8076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8399124587670007C8076 /* ViewController.swift */; };
 		08C8399524587670007C8076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C8399324587670007C8076 /* Main.storyboard */; };
@@ -29,7 +39,17 @@
 		0839F0C8245B8CB200D755B2 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		0839F0CA245B8DF300D755B2 /* SimplyEGrantType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyEGrantType.swift; sourceTree = "<group>"; };
 		0839F0CC245B911D00D755B2 /* Data+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
-		08C8398A24587670007C8076 /* SAML Test app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAML Test app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0839F0D3245C39D600D755B2 /* OPDS2AuthenticationDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPDS2AuthenticationDocument.swift; sourceTree = "<group>"; };
+		0839F0D5245C3ACA00D755B2 /* authentication_document_original.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authentication_document_original.json; sourceTree = "<group>"; };
+		0839F0D7245C4B0000D755B2 /* authentication_document.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authentication_document.json; sourceTree = "<group>"; };
+		0839F0DA245C4BD000D755B2 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		0839F0DC245C4D8800D755B2 /* OPDS2Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPDS2Publication.swift; sourceTree = "<group>"; };
+		0839F0DE245C4D9300D755B2 /* OPDS2Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPDS2Link.swift; sourceTree = "<group>"; };
+		0839F0E0245C4DFA00D755B2 /* libraries_original.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = libraries_original.json; sourceTree = "<group>"; };
+		0839F0E2245C4E0A00D755B2 /* libraries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = libraries.json; sourceTree = "<group>"; };
+		0839F0E4245C606100D755B2 /* APIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMock.swift; sourceTree = "<group>"; };
+		0839F0E6245C64B700D755B2 /* OPDS2CatalogsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPDS2CatalogsFeed.swift; sourceTree = "<group>"; };
+		08C8398A24587670007C8076 /* SAML_Test_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAML_Test_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C8398D24587670007C8076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C8399124587670007C8076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08C8399424587670007C8076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +78,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0839F0D9245C4BB400D755B2 /* OPDS2 */ = {
+			isa = PBXGroup;
+			children = (
+				0839F0E4245C606100D755B2 /* APIMock.swift */,
+				0839F0E6245C64B700D755B2 /* OPDS2CatalogsFeed.swift */,
+				0839F0DC245C4D8800D755B2 /* OPDS2Publication.swift */,
+				0839F0D3245C39D600D755B2 /* OPDS2AuthenticationDocument.swift */,
+				0839F0DE245C4D9300D755B2 /* OPDS2Link.swift */,
+				0839F0DA245C4BD000D755B2 /* Account.swift */,
+				0839F0D7245C4B0000D755B2 /* authentication_document.json */,
+				0839F0D5245C3ACA00D755B2 /* authentication_document_original.json */,
+				0839F0E2245C4E0A00D755B2 /* libraries.json */,
+				0839F0E0245C4DFA00D755B2 /* libraries_original.json */,
+			);
+			path = OPDS2;
+			sourceTree = "<group>";
+		};
 		08C8398124587670007C8076 = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +109,7 @@
 		08C8398B24587670007C8076 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08C8398A24587670007C8076 /* SAML Test app.app */,
+				08C8398A24587670007C8076 /* SAML_Test_app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +117,7 @@
 		08C8398C24587670007C8076 /* SAML Test app */ = {
 			isa = PBXGroup;
 			children = (
+				0839F0D9245C4BB400D755B2 /* OPDS2 */,
 				0805570F2458A5C70050026C /* SAML Test app.entitlements */,
 				08C8398D24587670007C8076 /* AppDelegate.swift */,
 				0839F0C8245B8CB200D755B2 /* AppConfig.swift */,
@@ -113,7 +151,7 @@
 			);
 			name = "SAML Test app";
 			productName = "SAML Test app";
-			productReference = 08C8398A24587670007C8076 /* SAML Test app.app */;
+			productReference = 08C8398A24587670007C8076 /* SAML_Test_app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,9 +192,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0839F0E1245C4DFA00D755B2 /* libraries_original.json in Resources */,
+				0839F0D8245C4B0000D755B2 /* authentication_document.json in Resources */,
 				08C8399A24587673007C8076 /* LaunchScreen.storyboard in Resources */,
+				0839F0E3245C4E0A00D755B2 /* libraries.json in Resources */,
 				08C8399724587673007C8076 /* Assets.xcassets in Resources */,
 				08055708245893300050026C /* CarthageOutput.xcfilelist in Resources */,
+				0839F0D6245C3ACA00D755B2 /* authentication_document_original.json in Resources */,
 				08C8399524587670007C8076 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,8 +236,14 @@
 				08C8399224587670007C8076 /* ViewController.swift in Sources */,
 				0839F0CD245B911D00D755B2 /* Data+JSON.swift in Sources */,
 				0839F0C9245B8CB200D755B2 /* AppConfig.swift in Sources */,
+				0839F0D4245C39D600D755B2 /* OPDS2AuthenticationDocument.swift in Sources */,
+				0839F0E7245C64B700D755B2 /* OPDS2CatalogsFeed.swift in Sources */,
+				0839F0DD245C4D8800D755B2 /* OPDS2Publication.swift in Sources */,
+				0839F0E5245C606100D755B2 /* APIMock.swift in Sources */,
 				08C8398E24587670007C8076 /* AppDelegate.swift in Sources */,
+				0839F0DB245C4BD000D755B2 /* Account.swift in Sources */,
 				080557112458A72C0050026C /* SessionManager.swift in Sources */,
+				0839F0DF245C4D9300D755B2 /* OPDS2Link.swift in Sources */,
 				0839F0CB245B8DF300D755B2 /* SimplyEGrantType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skyneck.SAML-Test-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SAML_Test_app;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skyneck.SAML-Test-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SAML_Test_app;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

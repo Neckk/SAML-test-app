@@ -11,14 +11,9 @@ import OAuth2
 
 class ViewController: UIViewController {
 
-    let currentSession: SessionManager = {
-        let oauth2 = AppConfig.sessionConfiguration(for: AppConfig.exampleLoginURL) // In SimplyE, we would insert an
+    let account = APIMock.account
 
-        // enable trace logging - for debug purpose
-        oauth2.logger = OAuth2DebugLogger(.trace)
-
-        return SessionManager(configuration: oauth2)
-    } ()
+    let currentSession: SessionManager! = SessionManager(account: APIMock.account)
 
     @IBOutlet var loadButton: UIButton!
     @IBOutlet var logOutButton: UIButton!
@@ -45,12 +40,12 @@ class ViewController: UIViewController {
         logOutButton.isEnabled = currentSession.configuration.hasUnexpiredAccessToken()
     }
 
-    @IBAction func loginAction(_ sender: Any) {
-        let url = AppConfig.exampleBaseURL.appendingPathComponent("me")
+    @IBAction func loadContentAction(_ sender: Any) {
+        let url = APIMock.exampleBaseURL.appendingPathComponent("me")
 
         let req = currentSession.configuration.request(forURL: url)
 
-        currentSession.loader?.perform(request: req) { [weak self] response in
+        currentSession.loader.perform(request: req) { [weak self] response in
             do {
                 _ = try response.responseJSON() // check if data is parsable, no need to use it in this example though
                 DispatchQueue.main.async { [weak self] in

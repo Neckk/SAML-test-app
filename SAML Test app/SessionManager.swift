@@ -11,20 +11,38 @@ import OAuth2
 
 class SessionManager {
     static var currentSession: SessionManager?
-    var loader: OAuth2DataLoader?
-    var configuration: OAuth2
 
-    init(configuration: OAuth2) {
-        self.configuration = configuration
+    var loader: OAuth2DataLoader
+    var configuration: OAuth2
+    let logInURL: String
+    let logOutURL: String
+
+    init?(account: Account) {
+        guard let logInURL = account.details?.userProfileLogInUrl else { return nil }
+        guard let logOutURL = account.details?.userProfileLogOutUrl else { return nil }
+        self.logInURL = logInURL
+        self.logOutURL = logOutURL
+
+        let oauth2 = AppConfig.sessionConfiguration(for: logInURL)
+
+        // enable trace logging - for debug purpose
+        oauth2.logger = OAuth2DebugLogger(.trace)
+
+        self.configuration = oauth2
         self.loader = OAuth2DataLoader(oauth2: configuration)
+
     }
 
     func logOut(completionHandler: ((Bool) -> Void)? = nil) {
-        guard let accessToken = configuration.accessToken else { completionHandler?(true); return }
+        guard
+            let accessToken = configuration.accessToken,
+            let url = URL(string: logOutURL)
+            else { completionHandler?(true); return }
+
         let parameters: [String: Any] = ["token": accessToken]
 
         // request
-        var request = URLRequest(url: AppConfig.exampleBaseURL.appendingPathComponent("logout"))
+        var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

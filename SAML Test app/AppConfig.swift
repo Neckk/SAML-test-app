@@ -10,16 +10,11 @@ import Foundation
 import OAuth2
 
 class AppConfig {
-    static let exampleBaseURL: URL = URL(string: "https://lyrasis-saml-test.herokuapp.com")!
-    static let exampleLoginURL: URL = exampleBaseURL.appendingPathComponent("login").appendingPathComponent("test")
-
-    static func sessionConfiguration(for loginURL: URL) -> OAuth2 {
-        let loginURLString = loginURL.absoluteString
-
+    static func sessionConfiguration(for loginURL: String) -> OAuth2 {
         let oauth2 = OAuth2SimplyEGrant(settings: [
-            "authorize_uri": loginURLString, // login url, will be provided from auth doc
+            "authorize_uri": loginURL, // login url, will be provided from auth doc
             "redirect_uris": ["https://skyneck.pl/login"],   // url to call after successfull log in, in this case we use universal link registered to this application
-            "keychain_account_for_tokens": loginURLString, // save token under URL key, so that user can log in and store multiple universities sessions
+            "keychain_account_for_tokens": loginURL, // save token under URL key, so that user can log in and store multiple universities sessions
             "keychain": true,
             "client_id": "iOS_app", // Backend may use it for client authentication
 //            "client_secret": "some secret", // we may use it in future

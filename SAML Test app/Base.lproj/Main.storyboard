@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeC-FZ-YZQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gL6-vU-Igb">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pZN-BU-YAN">
                                                         <rect key="frame" x="16" y="16" width="382" height="30"/>
@@ -32,7 +32,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
                                                                 <state key="normal" title="Load /me"/>
                                                                 <connections>
-                                                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3p-No-q0L"/>
+                                                                    <action selector="loadContentAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3p-No-q0L"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svc-Zh-Gss">
@@ -44,8 +44,8 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click &quot;Load&quot; button above" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-CA-Ucu">
-                                                        <rect key="frame" x="16" y="62" width="382" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click &quot;Load&quot; button above, Log in web view will show if needed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-CA-Ucu">
+                                                        <rect key="frame" x="16" y="62" width="382" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>

@@ -1,0 +1,63 @@
+{
+    "catalogs": [{
+        "links": [{
+            "href": "http://califa115.simplye-ca.org/CABAR/",
+            "type": "application/atom+xml;profile=opds-catalog;kind=acquisition",
+            "rel": "http://opds-spec.org/catalog"
+        }, {
+            "href": "https://lyrasis-saml-test.herokuapp.com/authentication_document",
+            "type": "application/vnd.opds.authentication.v1.0+json"
+        }, {
+            "href": "https://lyrasis-saml-test.herokuapp.com",
+            "type": "text/html",
+            "rel": "alternate"
+        }, {
+            "href": "https://libraryregistry.librarysimplified.org/library/urn:uuid:cf7b9299-b7ac-46c5-9f4f-0a2f54efdeec/eligibility",
+            "type": "application/geo+json",
+            "rel": "http://librarysimplified.org/rel/registry/eligibility"
+        }, {
+            "href": "https://libraryregistry.librarysimplified.org/library/urn:uuid:cf7b9299-b7ac-46c5-9f4f-0a2f54efdeec/focus",
+            "type": "application/geo+json",
+            "rel": "http://librarysimplified.org/rel/registry/focus"
+        }, {
+            "href": "mailto:support@oslri.net",
+            "properties": {
+                "https://schema.org/reservationStatus": "https://schema.org/ReservationPending"
+            },
+            "rel": "help"
+        }, {
+            "href": "mailto:support@oslri.net",
+            "properties": {
+                "https://schema.org/reservationStatus": "https://schema.org/ReservationPending"
+            },
+            "rel": "http://librarysimplified.org/rel/designated-agent/copyright"
+        }],
+        "metadata": {
+            "updated": "2020-04-03T13:45:28Z",
+            "id": "urn:uuid:cf7b9299-b7ac-46c5-9f4f-0a2f54efaaaa",
+            "title": "Jacek Test Library"
+        }
+    }],
+    "links": [{
+        "href": "https://libraryregistry.librarysimplified.org/libraries",
+        "type": "application/opds+json",
+        "rel": "self"
+    }, {
+        "href": "https://libraryregistry.librarysimplified.org/search",
+        "type": "application/opensearchdescription+xml",
+        "rel": "search"
+    }, {
+        "href": "https://libraryregistry.librarysimplified.org/register",
+        "type": "application/opds+json;profile=https://librarysimplified.org/rel/profile/directory",
+        "rel": "register"
+    }, {
+        "href": "https://libraryregistry.librarysimplified.org/library/{uuid}",
+        "type": "application/opds+json",
+        "rel": "http://librarysimplified.org/rel/registry/library",
+        "templated": true
+    }],
+    "metadata": {
+        "adobe_vendor_id": "NYPL",
+        "title": "Libraries"
+    }
+}
